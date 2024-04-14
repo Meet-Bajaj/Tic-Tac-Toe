@@ -1,24 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic-Tac-Toe</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Tic Tac Toe</h1>
-<div class="box">
-    <div class="blocks">X</div>
-    <div class="blocks">0</div>
-    <div class="blocks">X</div>
-    <div class="blocks">0</div>
-    <div class="blocks">X</div>
-    <div class="blocks">0</div>
-    <div class="blocks">X</div>
-    <div class="blocks">0</div>
-    <div class="blocks">X</div>
+    <div class="heading">
+
+        <h1>Tic Tac Toe</h1>
+        <br>
+        <h2 style="color: hsl(33, 100%, 75%);" id="turn"></h2>
+    </div>
+    <div class="box">
+        <div class="blocksRB" id="block">X</div>
+        <div class="blocksRB" id="block" onclick="displayXO()">0</div>
+        <div class="blocksB" id="block">X</div>
+        <div class="blocksRB" id="block">0</div>
+        <div class="blocksRB" id="block">X</div>
+        <div class="blocksB" id="block">0</div>
+        <div class="blocksR" id="block">X</div>
+        <div class="blocksR" id="block">0</div>
+        <div class="blocks" id="block">X</div>
+    </div>
+    <!-- <button onclick="playagain()"></button> -->
+<div class="popup" id="popup">
+    <h1>Game Over!</h1>
+    <p id="player"></p>
+    <p id="result"></p>
+    <button onclick="reset()">Play Again</button>
 </div>
-<script src="main.js"></script>
+    <!-- <div class="bottom">
+        <h2 id="result" style="font-family: sans-serif;"></h2><br>
+        <button onclick="" style="padding: 10px;width: 100%;font-size: large;background-color: hsl(0, 0%, 44%);border: none;">Restart</button>
+    </div> -->
+    <script src="main.js"></script>
 </body>
+
 </html>
